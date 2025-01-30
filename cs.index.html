@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness Campaign</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between">
+            <h1 class="text-xl font-bold">Cybersecurity Awareness</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:underline" onclick="showTab('home')">Home</a></li>
+                <li><a href="#threats" class="hover:underline" onclick="showTab('threats')">Threats</a></li>
+                <li><a href="#protection" class="hover:underline" onclick="showTab('protection')">Protection</a></li>
+                <li><a href="#resources" class="hover:underline" onclick="showTab('resources')">Resources</a></li>
+                <li><a href="#contact" class="hover:underline" onclick="showTab('contact')">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tabs Content -->
+    <main class="container mx-auto p-6 flex-grow">
+        <!-- Home Tab -->
+        <section id="home" class="tab-content">
+            <h2 class="text-3xl font-bold mb-4">Welcome to the Cybersecurity Awareness Campaign</h2>
+            <p class="mb-4">Cybersecurity is everyone’s responsibility. Learn how to protect yourself and your organization from cyber threats. Together, we can create a safer online world.</p>
+            <p class="mb-4">Every day, cybercriminals target individuals and organizations, seeking to exploit vulnerabilities. Our mission is to empower you with the knowledge and tools needed to stay safe online. This campaign is designed for people of all backgrounds, whether you are a tech expert or just getting started.</p>
+            <p class="mb-4">Protect your devices with strong password to prevents cyber attacks</p>
+            <p class="mb-4">Here’s what you’ll find on this site:
+            <ul class="list-disc pl-5 mb-4">
+                <li><strong>Common Threats:</strong> Understand the most prevalent cyber threats and how they operate.</li>
+                <li><strong>Protection Tips:</strong> Learn practical steps to secure your devices, accounts, and networks.</li>
+                <li><strong>Interactive Tools:</strong> Test your knowledge and assess your security habits.</li>
+                <li><strong>Resources:</strong> Access guides, quizzes, and tools to deepen your understanding of cybersecurity.</li>
+            </ul>
+            <p class="mb-4">Remember, staying secure online requires constant vigilance and awareness. By taking small but meaningful steps, we can reduce risks and foster a culture of cybersecurity in our communities.</p>
+            <img src="https://via.placeholder.com/800x400" class="rounded-lg shadow-md">
+        </section>
+
+        <!-- Threats Tab -->
+        <section id="threats" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-4">Understanding Cyber Threats</h2>
+            <p class="mb-4">Cyber threats are evolving every day. Here are the most common ones you should know about:</p>
+            <ul class="list-disc pl-5">
+                <li><strong>Phishing:</strong> Fake emails or messages designed to steal personal information. Avoid clicking on suspicious links or providing sensitive information to unknown sources.</li>
+                <li><strong>Ransomware:</strong> Malicious software that locks your data until a ransom is paid. Always back up your data and avoid downloading files from unverified sources.</li>
+                <li><strong>Social Engineering:</strong> Tactics used to manipulate individuals into revealing sensitive information. Be cautious when sharing personal details and verify the identity of individuals requesting sensitive data.</li>
+                <li><strong>Malware:</strong> Harmful software that compromises devices and networks. Install reliable antivirus software and keep your system updated to defend against malware.</li>
+                <li><strong>Zero-Day Exploits:</strong> Vulnerabilities in software that hackers exploit before developers can fix them. Keep your software and systems up to date to reduce risk.</li>
+            </ul>
+        </section>
+
+        <!-- Protection Tab -->
+        <section id="protection" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-4">Protecting Yourself Online</h2>
+            <p class="mb-4">Follow these best practices to stay secure:</p>
+            <ul class="list-disc pl-5">
+                <li>Use strong, unique passwords for all your accounts and store them securely in a password manager.</li>
+                <li>Enable multi-factor authentication (MFA) for an extra layer of security.</li>
+                <li>Be cautious of links, email attachments, and messages from unknown sources.</li>
+                <li>Keep your devices and software updated to protect against known vulnerabilities.</li>
+                <li>Back up important data regularly to an external drive or cloud storage.</li>
+                <li>Secure your home Wi-Fi network with a strong password and encryption settings.</li>
+                <li>Educate yourself and others about common cyber threats and scams.</li>
+            </ul>
+        </section>
+
+        <!-- Resources Tab -->
+        <section id="resources" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-4">Additional Resources</h2>
+            <p class="mb-4">Explore these tools and resources to enhance your cybersecurity knowledge:</p>
+            <ul class="list-disc pl-5">
+                <li><a href="#" class="text-blue-600 hover:underline">Phishing Quiz</a> - Test your ability to spot phishing attempts.</li>
+                <li><a href="#" class="text-blue-600 hover:underline">Password Strength Checker</a> - Ensure your passwords are strong and secure.</li>
+                <li><a href="#" class="text-blue-600 hover:underline">Cyber Risk Assessment Tool</a> - Evaluate your vulnerability to cyber risks.</li>
+                <li><a href="#" class="text-blue-600 hover:underline">Free Cybersecurity Guides</a> - Access step-by-step guides to improve your online security.</li>
+                <li><a href="#" class="text-blue-600 hover:underline">Incident Response Checklist</a> - Learn what to do in case of a cybersecurity breach.</li>
+                <li><a href="#" class="text-blue-600 hover:underline">Latest Cybersecurity News</a> - Stay updated on current threats and trends in cybersecurity.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Us Tab -->
+        <section id="contact" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+            <p class="mb-4">Have questions or need assistance? Reach out to us, and we’ll get back to you as soon as possible.</p>
+            <form class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium">Name:</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border rounded-md" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium">Email:</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border rounded-md" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium">Message:</label>
+                    <textarea id="message" name="message" rows="5" class="w-full p-2 border rounded-md" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-4 mt-8">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Cybersecurity Awareness Campaign. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to Handle Tabs -->
+    <script>
+        function showTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Show the selected tab
+            document.getElementById(tabId).classList.remove('hidden');
+        }
+
+        // Default to showing the Home tab
+        showTab('home');
+    </script>
